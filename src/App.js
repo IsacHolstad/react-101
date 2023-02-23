@@ -2,7 +2,7 @@ import './App.css';
 import Heading from "./components/Heading";
 import Paragraph from "./components/Paragraph";
 import Content from "./components/Content";
-import reactText from "./components/reactText";
+import ReactText from "./components/ReactText";
 
 function App() {
   return (
@@ -18,7 +18,11 @@ function App() {
                  color="darkblue"
                  height="35px"
         />
-        <reactText color="black"/>
+        <ReactText
+            color="black"
+            textAlign="center"
+        />
+        <hr/>
 
     </div>
   );
