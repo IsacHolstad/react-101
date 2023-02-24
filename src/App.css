@@ -34,20 +34,43 @@ h4 {
     font-size: 32px;
 }
 
+.h2ProfileHeading {
+    text-align: center;
+}
+
+.profileData {
+    text-align: center;
+    list-style-type: none;
+}
 
 .li {
     text-align: center;
     list-style-type: none;
     color: green;
     background-color: lightgray;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
+    margin: 0 50px;
+    height: 35px;
+    text-align: center;
+    align-content: center;
+    padding-top: 10px;
+    width: 80%;
+}
+
+.li:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+    color: darkgreen;
 }
 
 .ul {
-    padding: 10px;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    column-gap: 10px;
+
 }
 
 h6 {

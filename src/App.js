@@ -2,7 +2,6 @@ import './App.css';
 import Heading from "./components/Heading";
 import Paragraph from "./components/Paragraph";
 import Content from "./components/Content";
-import ReactText from "./components/ReactText";
 //import Counter from "./components/Voter";
 const proudcts = [
     {id: 0, name:"Milk", price: "10000$"},
@@ -21,9 +20,9 @@ let isLoggedIn = true;
 let content;
 
 if (isLoggedIn) {
-    content = <main className="profileData">
-        <h2>profile</h2>
-        <ul>
+    content = <main>
+        <h2 className="h2ProfileHeading">profile</h2>
+        <ul className="profileData">
             <li>Name: isac</li>
             <li>Number: 4939342</li>
             <li>Mail: isac@gmail.ai</li>
@@ -47,10 +46,6 @@ function App() {
                  color="darkblue"
                  height="35px"
         />
-        <ReactText
-            color="black"
-            textAlign="center"
-        />
         <hr/>
       <h3>Jhonny Votes:</h3>
       <img className={"johnny-img"}
@@ -63,19 +58,16 @@ function App() {
              alt="second img of some guy"/>
         <button>Vote For Morten</button>
       <hr/>
-      <hr/>
-      <hr/>
-      <hr/>
           <h4>Day 4 of React</h4>
       <hr/>
-            <ul className="ul">
+            <div className="ul">
                 {proudcts.map((product => (
                     <li className="li" key={product.id}>
                         {product.name}
                         {product.price}
                     </li>
                 )))}
-            </ul>
+            </div>
       <hr/>
         {content}
     </div>
