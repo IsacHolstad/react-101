@@ -49,15 +49,14 @@ function App() {
       <hr/>
           <h4>Day 4 of React</h4>
       <hr/>
-        <ul>
-            {proudcts.map((product => (
-                <li key={product.id}>
-                    {product.name}
-                    <br/>
-                    {product.price}
-                </li>
-            )))}
-        </ul>
+            <ul>
+                {proudcts.map((product => (
+                    <li key={product.id}>
+                        {product.name}
+                        {product.price}
+                    </li>
+                )))}
+            </ul>
     </div>
   );
 }
