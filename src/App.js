@@ -38,9 +38,10 @@ function App() {
       <hr/>
       <hr/>
       <hr/>
-      <div>
+          <h4>Day 4 of React</h4>
+      <hr/>
 
-      </div>
+
     </div>
   );
 }
