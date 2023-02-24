@@ -13,6 +13,25 @@ const proudcts = [
     {id: 5, name:"PepsiMax", price: "1000434330$"}
 
 ];
+//here you can choose between showing data based on if the user is logged in
+//if isLoggedIn = true it will show the data
+//if isLoggedIn = false it will only show the login form
+let isLoggedIn = true;
+
+let content;
+
+if (isLoggedIn) {
+    content = <main className="profileData">
+        <h2>profile</h2>
+        <ul>
+            <li>Name: isac</li>
+            <li>Number: 4939342</li>
+            <li>Mail: isac@gmail.ai</li>
+        </ul>
+    </main>
+} else{
+    content =<h6>Login Form</h6>
+}
 
 function App() {
   return (
@@ -49,14 +68,16 @@ function App() {
       <hr/>
           <h4>Day 4 of React</h4>
       <hr/>
-            <ul>
+            <ul className="ul">
                 {proudcts.map((product => (
-                    <li key={product.id}>
+                    <li className="li" key={product.id}>
                         {product.name}
                         {product.price}
                     </li>
                 )))}
             </ul>
+      <hr/>
+        {content}
     </div>
   );
 }
