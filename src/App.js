@@ -4,6 +4,14 @@ import Paragraph from "./components/Paragraph";
 import Content from "./components/Content";
 import ReactText from "./components/ReactText";
 import Counter from "./components/Voter";
+const proudcts = [
+    {id: 0, name:"Milk", price: "10000$"},
+    {id:1, name: "Mjølk", price: "10000$"},
+    {id:2, name:"Candy", price: "10000$"},
+    {id: 3, name:"Bread", price: "10000$"},
+    {id: 4, name:"Spray", price: "10000$"}
+
+];
 
 function App() {
   return (
@@ -40,8 +48,14 @@ function App() {
       <hr/>
           <h4>Day 4 of React</h4>
       <hr/>
-
-
+        <ul>
+            {proudcts.map((product => (
+                <li>
+                    {product.name}
+                    {product.price}
+                </li>
+            )))}
+        </ul>
     </div>
   );
 }
