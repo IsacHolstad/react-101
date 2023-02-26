@@ -57,7 +57,7 @@ h4 {
 }
 
 .li:hover {
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    box-shadow: 0 0.5em 0.5em -0.4em;
     transform: translateY(-0.25em);
     cursor: pointer;
     color: darkgreen;
