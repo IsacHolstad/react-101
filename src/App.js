@@ -85,6 +85,11 @@ function App() {
             </div>
       <hr/>
         <div>{content}</div>
+      <h6>form</h6>
+        <h2>register user</h2>
+        <div>
+
+        </div>
 
 
     </div>
