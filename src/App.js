@@ -84,7 +84,9 @@ function App() {
                 )))}
             </div>
       <hr/>
-        {content}
+        <div>{content}</div>
+
+
     </div>
   );
 }
